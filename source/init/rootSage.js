@@ -1,9 +1,6 @@
 //Core
-import { all, call } from 'redux-saga/effects';
-
-//Watcher
-
+import { all } from 'redux-saga/effects';
 
 export function* rootSage () {
-    yield console.log('init sage');
-}
+    yield all([]);
+};
