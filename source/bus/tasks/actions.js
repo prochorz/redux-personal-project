@@ -1,21 +1,19 @@
 //Types
 import { types } from "./types";
 
-const { FILL_TASKS, FETCH_TASKS_ASYNC } = types;
-
 export const tasksActions = {
     //sync
     fillTasks: ( tasks ) => {
         return {
-            type: FILL_TASKS,
+            type: types.FILL_TASKS,
             payload: tasks
         };
     },
 
     //Async
-    fetchTasks: () => {
+    fetchTasksAsync: () => {
         return {
-            type: FETCH_TASKS_ASYNC
+            type: types.FETCH_TASKS_ASYNC
         };
     }
 };

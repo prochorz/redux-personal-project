@@ -1,6 +1,11 @@
 //Core
-import { all } from 'redux-saga/effects';
+import { call, all } from 'redux-saga/effects';
+
+// Watchers
+import { watchTasks } from "../bus/tasks/saga/watchers";
 
 export function* rootSage () {
-    yield all([]);
+    yield all([
+        call(watchTasks)
+    ]);
 };

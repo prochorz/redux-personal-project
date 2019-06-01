@@ -3,5 +3,5 @@ export const types = {
     FILL_TASKS:             "FILL_TASKS",
 
     //Async
-    FILL_TASKS_ASYNC:       "FETCH_TASKS_ASYNC",
+    FETCH_TASKS_ASYNC:      "FETCH_TASKS_ASYNC",
 };

@@ -7,7 +7,7 @@ export const uiActions = {
             type: types.START_FETCHING
         }
     },
-    stopFetcjing: () => {
+    stopFetching: () => {
         return {
             type: types.STOP_FETCHING
         }
